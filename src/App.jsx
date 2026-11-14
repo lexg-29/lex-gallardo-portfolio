@@ -26,9 +26,9 @@ function HeroTechText() {
       speed: 0.7,
     };
     const mounts = [
-      ['tech-line-one', 'LEX GABRIEL'],
-      ['tech-line-two', 'E.'],
-      ['tech-line-three', 'GALLARDO'],
+      ['tech-line-one', 'LEX GABRIEL E.'],
+      ['tech-line-two', 'GALLARDO'],
+      ['tech-line-three', 'A COMPUTER SCIENCE STUDENT'],
     ];
     const roots = [];
     mounts.forEach(([id, text]) => {
