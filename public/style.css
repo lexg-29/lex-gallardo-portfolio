@@ -65,3 +65,9 @@
 @media (max-width: 650px) {
   .react-tech-title { height: 3.05em; }
 }
+.contact-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
