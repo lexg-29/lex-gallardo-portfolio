@@ -71,3 +71,69 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+
+/* Split-flap contact details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 38px;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.contact-category {
+  color: #B94A5C;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.contact-detail .contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+#contact-phone-flap,
+#contact-email-flap {
+  display: inline-block;
+  max-width: 100%;
+}
+
+#contact-email-flap .split-flap-text {
+  letter-spacing: .015em;
+}
+
+@media (max-width: 650px) {
+  .contact-details {
+    gap: 23px;
+    margin-top: 32px;
+  }
+
+  #contact-phone-flap .split-flap-text {
+    font-size: 17px !important;
+  }
+
+  #contact-email-flap .split-flap-text {
+    font-size: 13px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .contact-detail .contact-link {
+    gap: 9px;
+  }
+}
